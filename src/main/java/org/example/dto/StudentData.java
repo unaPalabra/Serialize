@@ -12,8 +12,16 @@ public class StudentData  implements Serializable{
     @JsonProperty("grade")
         private int grade;
 
+    @Override
+    public String toString() {
+        return "StudentData{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", grade=" + grade +
+                '}';
+    }
 
-        public String getFirstName() {
+    public String getFirstName() {
             return firstName;
         }
 
