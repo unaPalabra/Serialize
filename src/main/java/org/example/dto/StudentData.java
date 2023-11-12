@@ -1,6 +1,8 @@
 package org.example.dto;
 
-public class StudentData  i{
+import java.io.Serializable;
+
+public class StudentData  implements Serializable{
 
         private Long id;
         private String firstName;
